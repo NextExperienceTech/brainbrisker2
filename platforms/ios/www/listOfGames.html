@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/admob.js"></script>
+    <script type="text/javascript" src="js/eocplayground.js"></script>
+    <title>Brain Briker</title>
+    <script type="text/javascript">
+        var logscore = localStorage.getItem("eocscore");
+        var score = 0;
+        console.log(logscore);
+        var outputDiv = document.getElementById("demo");
+        outputDiv.innerHTML = logscore;
+        alert(logscore);
+        console.log(logscore);
+    </script>
+
+</head>
+
+<body class="landingpage">
+
+    <!--<button id="myBtn">Open Modal</button>-->
+    <div class="backArrow">
+        <a href="landingPage.html"> <img src="img/back_button.png" width="60%" /></a>
+    </div>
+    <div class="arrowHeader">
+        <img src="img/BB_orange_text.png" width="60%" />
+        <p>List of Games</p>
+    </div>
+    <hr>
+    <div class="gameList">
+        <a href="eyeOnColor.html">
+            <img src="img/eocLogo.png" width="30%" />
+            <div class="gameName">
+                <img src="img/eyeoncolor.png" width="90%" />
+                <p>Your best is 35%</p>
+                <div id="demo"></div>
+            </div>
+        </a>
+    </div>
+    <hr>
+    <div class="gameList">
+        <a href="arrangeNumbers.html">
+            <img src="img/atn_logo.png" width="30%" />
+            <div class="gameName">
+                <img src="img/anlogo.png" width="80%" />
+                <p>Your best is 0%</p>
+            </div>
+        </a>
+    </div>
+    <hr>
+    <div class="gameList">
+        <a href="queen.html">
+            <img src="img/gamelist_queen.svg" width="30%" />
+            <div class="gameName">
+                <img src="img/P8Q_text.svg" width="90%" />
+                <p>Your best is 0%</p>
+            </div>
+        </a>
+    </div>
+    <hr>
+    <div class="gameList">
+        <a href="memory.html">
+            <img src="img/gamelist_KIM.png" width="30%" />
+            <div class="gameName">
+                <img src="img/kim.png" width="90%" />
+                <p>Your best is 0%</p>
+            </div>
+        </a>
+    </div>
+    <hr>
+
+</body>
+<script>
+    var admobid = {};
+    if (/(android)/i.test(navigator.userAgent)) {
+        admobid = { // for Android
+            banner: 'ca-app-pub-6869992474017983/9375997553',
+            interstitial: 'ca-app-pub-6869992474017983/1657046752'
+        };
+    } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+        admobid = { // for iOS
+            banner: 'ca-app-pub-6869992474017983/4806197152',
+            interstitial: 'ca-app-pub-6869992474017983/7563979554'
+        };
+    } else {
+        admobid = { // for Windows Phone
+            banner: 'ca-app-pub-6869992474017983/8878394753',
+            interstitial: 'ca-app-pub-6869992474017983/1355127956'
+        };
+    }
+
+    function initApp() {
+        if (AdMob) {
+            AdMob.createBanner({
+                adId: admobid.banner,
+                position: AdMob.AD_POSITION.BOTTOM_CENTER,
+                autoShow: true
+            });
+        }
+    }
+
+    document.addEventListener('deviceready', initApp, false);
+</script>
+
+</html>

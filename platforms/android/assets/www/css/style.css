@@ -1,0 +1,745 @@
+        body {
+            background: #f9f9f9;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        
+        .splashBody {
+            background: #376062;
+            /* For browsers that do not support gradients */
+            background: -webkit-radial-gradient(50% 55%, closest-side, #b8c8c8, #376062, #03383b);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-radial-gradient(50% 55%, closest-side, #b8c8c8, #376062, #03383b);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-radial-gradient(50% 55%, closest-side, #b8c8c8, #376062, #03383b);
+            /* For Firefox 3.6 to 15 */
+            background: radial-gradient(50% 55%, closest-side, #b8c8c8, #376062, #03383b);
+            /* Standard syntax */
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        
+        *:active,
+        *.active {
+            outline: none;
+            border: none;
+            outline: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        
+        .app {
+            width: 315px;
+            margin: 0px auto;
+            background: url('../img/bg_elements.svg') repeat-y;
+            background-position: 50% 50%;
+        }
+        
+        .bbtext {
+            width: 100%;
+        }
+        
+        .bbhead {
+            padding-top: 20%
+        }
+        
+        .spalashLogo {
+            padding-top: 20%;
+            padding-left: 40%;
+        }
+        
+        .profile {
+            background-color: #f9f9fa;
+            margin: 6%;
+            text-align: center;
+            float: left;
+        }
+        
+        .popuppro {
+            /* background-color: #f9f9fa; */
+            margin: 0 auto;
+            text-align: center;
+            /* float: left; */
+            width: 25%;
+            position: relative;
+            top: 50%;
+        }
+        
+        .popuppro input {
+            font-size: 200%;
+        }
+        
+        .profile h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: #9da0a3;
+            font-weight: 100;
+            padding: 0% 0% 2% 0;
+            line-height: 0px;
+        }
+        
+        .profile input {
+            width: 80%;
+            margin: 0px auto;
+            padding: 15px 10px;
+            border: 1px solid #a9a8a8;
+            font-size: 20px;
+            margin-bottom: 10%;
+            color: #f3715b;
+        }
+        
+        .profile img {
+            padding-bottom: 5%
+        }
+        
+        .ageLimit {
+            width: 106%;
+            margin: 0px auto;
+        }
+        
+        ul,
+        ul li,
+        .ageLimit ul,
+        .ageLimit li {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+        
+        .ageLimit li {
+            list-style: none;
+            float: left;
+            margin-right: 15px;
+            position: relative;
+            width: 20%;
+        }
+        
+        .ageLimit li img {
+            width: 85%;
+        }
+        
+        .profile ul {
+            position: relative;
+        }
+        
+        .btnreset {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #9da0a3 !important;
+            border: 1px solid #aeadad !important;
+            width: 30% !important;
+            float: left;
+            margin: 5% 5% 10% 8%!important;
+        }
+        
+        .btnsubmit {
+            width: 30% !important;
+            float: left;
+            margin: 5% 0% 10% 8%!important;
+        }
+        
+        .closeBtn {
+            position: absolute;
+            float: right;
+            text-align: right;
+            right: 35px;
+            top: 35px;
+        }
+        
+        .bgelements {
+            background: url(../img/bg_elements.svg) no-repeat;
+            background-position: 10%;
+        }
+        
+        .splashScreen {
+            padding: 10% 5% 5% 5%;
+            margin: 0 auto;
+            text-align: center;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00383c+0,6a8b8d+100 */
+            background: #00383c;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #00383c 0%, #6a8b8d 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #00383c 0%, #6a8b8d 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #00383c 0%, #6a8b8d 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00383c', endColorstr='#6a8b8d', GradientType=0);
+            /* IE6-9 */
+            height: 100%;
+            background-size: 100% 100%;
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+        }
+        
+        .modal {
+            position: fixed;
+            z-index: 1;
+            overflow: auto;
+            background: #FFF;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            display: block;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        /* The Close Button */
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .landingpage {
+            background: #f9f9f9!important;
+            margin: 5%;
+        }
+        
+        .landingpage p {
+            color: #9ea0a3;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 0px;
+        }
+        
+        hr {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+            clear: both;
+        }
+        
+        .landingGround ul,
+        .landingGround ul li {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .landingGround ul li {
+            list-style: none;
+            float: left;
+            width: 48%;
+            padding-bottom: 5%;
+        }
+        
+        .landingGround ul li img {
+            width: 75%;
+            padding-left: 10%;
+        }
+        
+        .landingGround ul li p {
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        
+        .backArrow {
+            top: 5px;
+        }
+        
+        .backArrow,
+        .arrowHeader {
+            position: relative;
+            display: block;
+            float: left;
+        }
+        
+        .arrowHeader {
+            width: 80%;
+        }
+        
+        .gap {
+            margin-right: 4%!important;
+        }
+        
+        .landingGround ul li a {
+            text-decoration: none;
+        }
+        
+        .gameList {
+            clear: both;
+            width: 100%;
+            padding: 5% 0%;
+        }
+        
+        .gameName {
+            position: relative;
+            top: 20px;
+        }
+        
+        .gameName {
+            float: right;
+            width: 65%;
+        }
+        
+        .gameName img {
+            position: relative;
+            top: 5%;
+        }
+        
+        .w3-light-grey,
+        .w3-hover-light-grey:hover,
+        .w3-light-gray,
+        .w3-hover-light-gray:hover {
+            color: #000!important;
+            background-color: #dcddde!important;
+            height: 16px;
+        }
+        
+        .w3-round-xlarge {
+            border-radius: 5px;
+        }
+        
+        .w3-blue,
+        .w3-hover-blue:hover {
+            color: #fff!important;
+            background-color: #b0cb00!important;
+            height: 16px;
+        }
+        
+        .w3-container,
+        .w3-panel {
+            padding: 0.01em 16px;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .gameName p {
+            font-size: 12px;
+        }
+        
+        .gameName .statusbar {
+            float: left;
+        }
+        
+        .gameName .statusbar {
+            margin-top: 10%;
+        }
+        
+        .gameName .lock {
+            margin-top: 15%;
+            left: 10%;
+            position: relative;
+        }
+        
+        .middlePosition {
+            position: relative;
+            top: -20px;
+        }
+        
+        .pl25 {
+            padding-left: 25px;
+        }
+        
+        .anlogoPosition {
+            padding-left: 10px!important;
+            top: -7px!important;
+            position: relative;
+        }
+        
+        .eqlogoPosition {
+            padding-left: 10px!important;
+            top: -25px!important;
+            position: relative;
+        }
+        
+        .runningTextbox {
+            margin: 15%;
+            color: #797a7a;
+            background: #fff;
+            padding: 5%;
+            border: 1px solid #b3b3b3;
+        }
+        
+        .runningTextbox p {
+            line-height: 20px;
+        }
+        
+        .gamePage {
+            background: #f9f9f9;
+            padding: 6%;
+        }
+        
+        .gamePage table {
+            position: relative;
+            margin-top: 65%;
+        }
+        
+        .gamePage p {
+            line-height: 1;
+            font-size: 120%;
+        }
+        
+        .gameInfo {
+            background: #FFF;
+            border: 1px solid #b3b3b3;
+            padding: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #797a7a;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        
+        .gameInfo2 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #797a7a;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        
+        .heading1 {
+            color: #db1c71;
+            font-size: 200%;
+            line-height: 3;
+        }
+        
+        .infoIcon img {
+            width: 40%;
+            float: left;
+        }
+        
+        .infoIcon a {
+            text-decoration: none;
+            color: #a7a9ac;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .infoIcon span {
+            position: relative;
+            left: 10px;
+            top: 15px;
+        }
+        
+        .infoIcon,
+        {
+            float: left;
+        }
+        
+        .nextIcon {
+            float: right;
+        }
+        
+        .nextIcon a,
+        .gameInfo2 h2 {
+            text-decoration: none;
+            color: #db1c71;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .gameInfo2 p {
+            line-height: 1.1;
+            text-align: left;
+        }
+        
+        .gameInfoExample {
+            background: #FFF;
+            border: 1px solid #b3b3b3;
+            padding: 5%;
+        }
+        
+        .nextIcon img {
+            width: 50%;
+            float: right;
+        }
+        
+        .nextIcon span {
+            position: relative;
+            right: -15px;
+            top: 15px;
+        }
+        
+        .eocPlayGround {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border: 1px solid #b3b3b3;
+            background-color: #FFF;
+            padding: 5%;
+        }
+        
+        .eocPlayGround h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            color: #d1d3d4;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0!important;
+        }
+        
+        .eocText {
+            color: #00a651;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px!important;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0!important;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        
+        .progressBar {
+            color: #000!important;
+            background-color: #f1f1f1!important
+        }
+        
+        .progressBargreen {
+            height: 50px;
+            width: 25%;
+            color: #fff!important;
+            background-color: #46cdef!important;
+            margin: 5% 0 5% 0;
+        }
+        
+        .button1 {
+            padding: 3% 5%;
+            color: #fff!important;
+            /*background-color: #ff0000!important;*/
+            font-size: 30px;
+            width: 30%;
+            margin-right: 20px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            background: none;
+        }
+        
+        .button2 {
+            padding: 3% 5%;
+            color: #fff!important;
+            /*background-color: #00a651!important;*/
+            font-size: 30px;
+            width: 30%;
+            margin-left: 20px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            background: none;
+        }
+        
+        #myProgress {
+            width: 100%;
+            background-color: #ddd;
+        }
+        
+        #myBar {
+            width: 1%;
+            height: 30px;
+            background-color: #4CAF50;
+        }
+        
+        .arrangenum ul li,
+        .arrangenum ul {
+            list-style: none!important;
+            display: block;
+        }
+        
+        .ngamebody {
+            background: #f9f9f9!important;
+            margin: 5%!important;
+        }
+        
+        .ngame img {}
+        
+        .ngame tr td {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .ngamebody table {
+            width: 100%;
+        }
+        /* dropdown */
+        
+        .wrapper-demo {}
+        
+        .main {
+            width: 50%;
+            float: left;
+        }
+        
+        .wrapper-dropdown-5 {
+            /* Size & position */
+            position: relative;
+            width: 80%;
+            padding: 17px 15px;
+            /* Styles */
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            outline: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        
+        .wrapper-dropdown-5:after {
+            /* Little arrow */
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            margin-top: -3px;
+            border-width: 6px 6px 0 6px;
+            border-style: solid;
+            border-color: #4cbeff transparent;
+        }
+        
+        .wrapper-dropdown-5 .dropdown {
+            /* Size & position */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            /* Styles */
+            background: #fff;
+            border-radius: 0 0 5px 5px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-top: none;
+            border-bottom: none;
+            list-style: none;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            /* Hiding */
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .wrapper-dropdown-5 .dropdown li {
+            padding: 10px;
+        }
+        
+        .wrapper-dropdown-5 .dropdown li a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 0;
+            transition: all 0.3s ease-out;
+            border-bottom: 1px solid #e6e8ea;
+        }
+        
+        .wrapper-dropdown-5 .dropdown li:last-of-type a {
+            border: none;
+        }
+        
+        .wrapper-dropdown-5 .dropdown li i {
+            margin-right: 5px;
+            color: inherit;
+            vertical-align: middle;
+        }
+        /* Hover state */
+        
+        .wrapper-dropdown-5 .dropdown li:hover a {
+            color: #57a9d9;
+        }
+        /* Active state */
+        
+        .wrapper-dropdown-5.active {
+            border-radius: 5px 5px 0 0;
+            background: #4cbeff;
+            box-shadow: none;
+            border-bottom: none;
+        }
+        
+        .wrapper-dropdown-5.active:after {
+            border-color: #82d1ff transparent;
+        }
+        
+        .wrapper-dropdown-5.active .dropdown {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            max-height: 400px;
+        }
+        /*drop down end*/
+        
+        .startBtn {
+            float: left;
+            background: #795ca2;
+            padding: 5% 5%;
+            color: #FFF;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            width: 38%;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .count {
+            background-color: #f9f9f9;
+            padding: 2%;
+            color: #000;
+            font-size: 20px;
+            border: none;
+        }
+        
+        .eightQueens ul {
+            list-style: none;
+            clear: both;
+        }
+        
+        .eightQueens ul li {
+            list-style: none;
+            float: left;
+            margin-right: 2px;
+            cursor: hand;
+        }
+        
+        .numberpopup {
+            background: #FFF;
+            z-index: 9999;
+            opacity: 0.9;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: block;
+            top: 25%;
+            left: 0px;
+        }
+        
+        .eightQuennPos {
+            position: fixed;
+            top: 2%;
+        }
+        
+        .score {
+            position: fixed;
+            top: 30%;
+            text-align: center;
+            font-size: 30px;
+            color: #000000;
+            z-index: -1;
+            width: 90%;
+        }
