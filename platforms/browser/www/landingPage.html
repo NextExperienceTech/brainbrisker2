@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/landingPage.js"></script>
+    <script type="text/javascript" src="js/eocplayground.js"></script>
+    <title>Brain Briker</title>
+    <script type="text/javascript ">
+        /*  var isPendingInterstitial = false;
+                                        var isAutoshowInterstitial = false;
+
+
+                                        function prepareInterstitialAd() {
+                                            console.log("hit3");
+                                            if (!isPendingInterstitial) { // We won't ask for another interstitial ad if we already have an available one
+                                                admob.requestInterstitialAd({
+                                                    autoShowInterstitial: isAutoshowInterstitial
+                                                });
+                                            }
+                                        }
+
+                                        function onAdLoadedEvent(e) {
+                                            console.log("hit4");
+                                            if (e.adType === admob.AD_TYPE.INTERSTITIAL && !isAutoshowInterstitial) {
+                                                isPendingInterstitial = true;
+                                            }
+                                        }
+
+                                        function onDeviceReady() {
+                                            console.log("hit2");
+                                            document.removeEventListener('deviceready', onDeviceReady, false);
+
+                                            admob.setOptions({
+                                                publisherId: "ca-app-pub-5951995148528840~6661077084", // Required
+                                                interstitialAdId: "ca-app-pub-5951995148528840/4654038459" // Optional
+                                            });
+
+                                            document.addEventListener(admob.events.onAdLoaded, onAdLoadedEvent);
+                                            prepareIntestitialAd();
+                                        }
+
+                                        document.addEventListener("deviceready", onDeviceReady, false);
+
+                                        function showInterstitialAd() {
+                                            console.log("hit");
+                                            if (isPendingInterstitial) {
+                                                admob.showInterstitialAd(function() {
+                                                    isPendingInterstitial = false;
+                                                    isAutoshowInterstitial = false;
+                                                    prepareInterstitialAd();
+                                                });
+                                            } else {
+                                                // The interstitial is not prepared, so in this case, we want to show the interstitial as soon as possible
+                                                isAutoshowInterstitial = true;
+                                                admob.requestInterstitialAd({
+                                                    autoShowInterstitial: isAutoshowInterstitial
+                                                });
+                                            }
+                                        }
+                                        $(document).ready(function() {
+                                            showInterstitialAd()
+                                        });*/
+    </script>
+</head>
+
+<body class="landingpage" onload="loading()">
+    <!--<button id="myBtn">Open Modal</button>-->
+    <img src="img/BB_orange_text.png" width="60%" />
+    <p id="result"></p>
+    <hr>
+    <div class="landingGround">
+        <ul style="padding-top:10%">
+            <li class="gap">
+                <a href="listOfGames.html"><img src="img/listofgame.png" />
+                    <p>List of Games</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="myBtn"><img src="img/profileicon.png" />
+                    <p>Profile</p>
+                </a>
+            </li>
+            <li class="gap"><img src="img/settingicon.png" />
+                <p>Settings</p>
+            </li>
+            <li><img src="img/scoreicon.png" />
+                <p>Score History</p>
+            </li>
+            <li class="gap"><img src="img/levelicon.png" />
+                <p>Your Brisk Level</p>
+            </li>
+            <li><img src="img/aboutbb.png" />
+                <p>About Brisker</p>
+            </li>
+        </ul>
+    </div>
+    <div onload="">test</div>
+    <div id="myModal" class="modal">
+        <div class="profile">
+            <div class="closeBtn close"><img src="img/close.png" width="50%"></div>
+            <h3>Create Profile</h3>
+            <img src="img/default_profile.png" />
+            <input type="text" name="fname" placeholder="Name" id="username">
+            <input type="email" name="fname" placeholder="email" id="email">
+            <ul class="ageLimit">
+                <li><img src="img/7_12yrsb.png" id="ageimg1" onclick="changeImage1()" /><br>
+                    <p id="ageim1">7-12yrs</p>
+                </li>
+                <li><img src="img/13_22yrsb.png" id="ageimg2" onclick="changeImage2()" /><br>
+                    <p>13-22yrs</p>
+                </li>
+                <li><img src="img/23_30yrsb.png" id="ageimg3" onclick="changeImage3()" /><br>
+                    <p>23-30yrs</p>
+                </li>
+                <li><img src="img/30+yrsb.png" id="ageimg4" onclick="changeImage4()" /><br>
+                    <p>30+ yrs</p>
+                </li>
+            </ul>
+            <div>
+                <input type="button" value="RESET" class="btnreset" id="btnGet" onClick="resett() " />
+                <input type="button" value="SUBMIT" class="btnsubmit" id="btnSave" onClick="stored()" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript ">
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function changeImage1() {
+            if (document.getElementById("ageimg1").getElementsByTagName("img") == "img/7_12yrs.png") {
+                document.getElementById("ageimg1").src = "img/7_12yrsb.png";
+            } else {
+                document.getElementById("ageimg1").src = "img/7_12yrs.png";
+            }
+        }
+
+
+        function changeImage2() {
+
+            if (document.getElementById("ageimg2").getElementsByTagName("img") == "img/13_22yrs.png") {
+                document.getElementById("ageimg2").src = "img/13_22yrsb.png";
+            } else {
+                document.getElementById("ageimg2").src = "img/13_22yrs.png";
+            }
+        }
+
+        function changeImage3() {
+
+            if (document.getElementById("ageimg3").src == "img/23_30yrs.png") {
+                document.getElementById("ageimg3").src = "img/23_30yrsb.png";
+            } else {
+                document.getElementById("ageimg3").src = "img/23_30yrs.png";
+            }
+        }
+
+        function changeImage4() {
+
+            if (document.getElementById("ageimg4").src == "img/30+yrs.png") {
+                document.getElementById("ageimg4").src = "img/30+yrsb.png";
+            } else {
+                document.getElementById("ageimg4").src = "img/30+yrs.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
