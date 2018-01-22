@@ -9,6 +9,7 @@
     ]
   },
   "dependencies": {
-    "cordova-android": "~6.3.0"
+    "cordova-android": "~6.3.0",
+    "cordova-browser": "^5.0.3"
   }
 }

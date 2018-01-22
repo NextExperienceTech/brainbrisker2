@@ -1,12 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.nxtindia.brainbrisker" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Brain Brisker</name>
     <description>
-        A blank PhoneGap app.
+        Brain Brisker
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="balaji.kasi.rajamani@gmail.com" href="http://nxtindia.com">
+      Brain Brisker
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <icon src="res/icon.png" />
+    <icon density="ldpi" src="res/android/icon-40@2x.png" />
+    <icon density="mdpi" src="res/android/icon-60@2x.png" />
+    <icon density="hdpi" src="res/android/icon-72@2x.png" />
+    <icon density="xhdpi" src="res/android/icon-76@2x.png" />
 </widget>
