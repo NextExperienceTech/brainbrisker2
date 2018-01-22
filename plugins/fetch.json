@@ -1,0 +1,18 @@
+{
+  "admob": {
+    "source": {
+      "type": "registry",
+      "id": "admob@^5.5.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.admob.plugin": {
+    "source": {
+      "type": "registry",
+      "id": "com.admob.plugin@^5.5.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

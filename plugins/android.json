@@ -1,0 +1,15 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "admob": {
+      "PACKAGE_NAME": "com.nxtindia.brainbrisker"
+    }
+  },
+  "dependent_plugins": {}
+}

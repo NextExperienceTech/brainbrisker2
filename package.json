@@ -9,6 +9,8 @@
     ]
   },
   "dependencies": {
+    "admob": "^5.5.0",
+    "com.admob.plugin": "^5.5.0",
     "cordova-android": "~6.3.0",
     "cordova-browser": "^5.0.3"
   }
